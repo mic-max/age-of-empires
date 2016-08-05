@@ -11,6 +11,6 @@ public class Test {
 		System.out.println("---------------------------------------");
 		Unit unit = new Villager(20, 7, civilisation);
 		Building building = new TownCentre(30, 4, civilisation);
-		// Source resource = new Stone(45.3f, 34.1f);
+		Source resource = new Stone(45.3f, 34.1f);
 	}
 }

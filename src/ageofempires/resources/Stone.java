@@ -19,4 +19,9 @@ public class Stone extends Source {
 	public Resource getCost() {
 		return null;
 	}
+
+	@Override
+	public int getBaseHealth() {
+		return 69;
+	}
 }

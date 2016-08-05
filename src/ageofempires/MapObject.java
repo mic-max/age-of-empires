@@ -23,21 +23,13 @@ public abstract class MapObject {
 	}
 
 	// getters for static properties
-	public String getModel() {
-		return getModel();
-	}
+	public abstract String getModel();
 
-	public int getBuildTime() {
-		return getBuildTime();
-	}
+	public abstract int getBuildTime();
 
-	public int getBaseHealth() {
-		return getBaseHealth();
-	}
+	public abstract int getBaseHealth();
 
-	public Resource getCost() {
-		return getCost();
-	}
+	public abstract Resource getCost();
 
 	protected String getName() {
 		return getClass().getSimpleName();
