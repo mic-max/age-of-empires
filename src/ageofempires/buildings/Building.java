@@ -1,10 +1,10 @@
 package ageofempires.buildings;
 
-import ageofempires.MapObject;
+import ageofempires.*;
+import ageofempires.civilisations.*;
 
 public abstract class Building extends MapObject {
-	
-	public Building(String name, float x, float y) {
-		super(name, x, y);
+	public Building(float x, float y, Civilisation civilisation) {
+		super(x, y, civilisation);
 	}
 }

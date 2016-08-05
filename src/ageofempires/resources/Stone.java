@@ -1,8 +1,12 @@
 package ageofempires.resources;
 
 public class Stone extends Resource {
+	public Stone(float x, float y) {
+		super(x, y);
+	}
 
-	public Stone(String name, float x, float y) {
-		super(name, x, y);
+	@Override
+	public String getModel() {
+		return null;
 	}
 }

@@ -1,10 +1,10 @@
 package ageofempires.units;
 
-import ageofempires.MapObject;
+import ageofempires.*;
+import ageofempires.civilisations.*;
 
 public abstract class Unit extends MapObject {
-
-	public Unit(String name, float x, float y) {
-		super(name, x, y);
+	public Unit(float x, float y, Civilisation civilisation) {
+		super(x, y, civilisation);
 	}
 }

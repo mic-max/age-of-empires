@@ -1,10 +1,9 @@
 package ageofempires.resources;
 
-import ageofempires.MapObject;
+import ageofempires.*;
 
 public abstract class Resource extends MapObject {
-
-	public Resource(String name, float x, float y) {
-		super(name, x, y);
+	public Resource(float x, float y) {
+		super(x, y, null);
 	}
 }

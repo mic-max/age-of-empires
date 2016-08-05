@@ -6,23 +6,19 @@ import ageofempires.buildings.*;
 import ageofempires.units.*;
 
 public abstract class Civilisation {
-	
-	protected String name;
-
 	protected List<Unit> units = new ArrayList<Unit>();
 	protected List<Building> buildings = new ArrayList<Building>();
-	
+
 	// x and y are the town centre's location
-	public Civilisation(String name, float x, float y) {
-		this.name = name;
-		for(int i = 0; i < 4; i++)
-			this.units.add(new Villager(i + "", 4, 5));
-		this.buildings.add(new TownCentre("Civilisation Town Centre", x, y));
-		
+	public Civilisation(float x, float y) {
+		for (int i = 0; i < 4; i++)
+			this.units.add(new Villager(x, y, this)); // use x and y locations for TownCentre and spawn villagers nearby
+		this.buildings.add(new TownCentre(x, y, this));
 		System.out.println(this);
 	}
-	
+
+	@Override
 	public String toString() {
-		return getClass().getName() + ": " + name;
+		return getClass().getSimpleName();
 	}
 }

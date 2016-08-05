@@ -1,8 +1,14 @@
 package ageofempires.units;
 
-public class Villager extends Unit {
+import ageofempires.civilisations.*;
 
-	public Villager(String name, float x, float y) {
-		super(name, x, y);
+public class Villager extends Unit {
+	public Villager(float x, float y, Civilisation civilisation) {
+		super(x, y, civilisation);
+	}
+
+	@Override
+	public String getModel() {
+		return null;
 	}
 }
